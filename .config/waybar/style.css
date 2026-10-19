@@ -1,0 +1,250 @@
+/* ========================GENERAL SETTINGS======================== */
+* {
+    font-family: "JetBrains Mono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: rgba(15, 15, 15, 0.65);    /* #2e2e2e - autumn, #171717 - arctic */
+    border-radius: 9px;
+    border: 3px solid rgba(246, 113, 85, 0.93);   /* autumn,  3px solid rgba(51, 204, 255, 0.93) - arctic */
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+/* ================================================================ */
+
+
+/* ========================BUTTONS SETTINGS======================== */
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: rgba(246, 113, 85, 0.40);
+}
+
+#workspaces button.active {
+    color: rgba(246, 113, 85, 0.93);  /* #f57256 */
+}
+
+#workspaces button.focused {
+    color: #f4dbd6;
+}
+
+#workspaces button.urgent {
+    color: #ff0000;                   /* was eb4d4b */
+}
+/* ================================================================ */
+
+
+/* ========================MODULES SETTINGS======================== */ 
+#custom-separatorpow {
+    color: rgba(246, 113, 85, 0.93);
+    opacity: 0.5;
+}
+
+#custom-separator {
+    color: rgba(246, 113, 85, 0.93);
+    opacity: 0.5;
+}
+
+tooltip {
+    background-color: #61321b;
+    border-radius: 8px;
+    border: 3px solid #f57256;
+}
+
+#tray {
+    background-color: rgba(246, 113, 85, 0.93);
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 11px;
+    margin-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #2e2e2e;
+}
+
+#custom-arch {
+    background-color: rgba(246, 113, 85, 0.93);
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 10px;
+    padding-left: 18px;
+    padding-right: 20px; /*was 21*/
+    margin-left: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #2e2e2e;
+}
+
+#clock {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;
+    padding: 0 10px;
+}
+
+#pulseaudio {
+    /*background-color: #7f7f7f; (127, 127, 127)*/
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;
+    padding: 0 10px;
+}
+
+#language {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;
+    padding: 0 10px;
+}
+
+/* ==========battery settings========== */
+#battery {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;
+    padding: 0 10px;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #7dc4e4;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff0000;                        /* was #f53c3c */
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* ==================================== */
+
+#network {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;
+    padding: 0 10px;
+}
+
+#custom-power {
+    background-color: rgba(246, 113, 85, 0.93);
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 10px;
+    padding-left: 18px;      /* was 14px and 16px */
+    padding-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #2e2e2e;
+}
+
+/* ==========non-use modules========== */
+#temperature {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;
+    padding: 0 10px;
+}
+
+#cpu {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #9a9a9a;          /* was #f5a97f */
+    padding: 0 10px;
+}
+
+#memory {
+    color: #a6da95;
+    padding: 0 10px;
+}
+
+#window {
+    color: #cad3f5;
+}
+
+#mode {
+    background-color: #64727d;
+    box-shadow: inset 0 -3px #ffffff;
+}
+/* =================================== */
+/* ================================================================ */
+
+
+/* ========================MODULES GENERAL SETTINGS======================== */
+.modules-right,
+.modules-left,
+.modules-center {
+    background-color: transparent;
+
+    /* if WB shoulnd't be transparent */
+    /* border: 2px solid rgba(51, 204, 255, 0.93);
+    border-radius: 9px;
+    margin: 8px 8px; */
+}
+
+.modules-right {
+    padding: 0 15px;
+}
+
+.modules-left {
+    padding: 0 12px;
+}
+
+.modules-center {
+    padding: 0 10px;
+}
+
+/* ==========smth========== */
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}
+
+label:focus {
+  background-color: #000000;
+}
+/* ======================== */
+/* ======================================================================== */

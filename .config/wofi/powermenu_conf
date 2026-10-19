@@ -1,0 +1,22 @@
+show = drun
+hide_search = true
+
+width = 5%
+height = 27%  # was 22%
+
+# width=80px
+# height=195px
+
+x = 1814
+y = 390       # was 400
+
+normal_window = false
+disable_dynamic_sort = true
+
+# position=right
+# halign=fill
+# content_halign=center
+
+gtk-dark = true
+# no_actions=true
+hide_scroll = true

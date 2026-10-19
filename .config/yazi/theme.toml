@@ -1,0 +1,86 @@
+# ~/.config/yazi/theme.toml
+
+[mgr]
+cwd = { fg = "#f57256" }
+
+[filetype]
+rules = [
+	{ url = "*", fg = "#6c6c6c" },
+]
+
+find_keyword  = { fg = "#f57256", bold = true, underline = true }
+find_position = { fg = "#ffddbb", bg = "reset", bold = true }
+
+symlink_target = { fg = "#ffddbb", italic = true }
+
+marker_copied   = { fg = "#ffddbb", bg = "#ffddbb" }
+marker_cut      = { fg = "#f57256", bg = "#f57256" }
+marker_marked   = { fg = "#f57256", bg = "#f57256" }
+marker_selected = { fg = "#ffddbb", bg = "#ffddbb" }
+
+count_copied   = { fg = "#000000", bg = "#ffddbb" }
+count_cut      = { fg = "#000000", bg = "#f57256" }
+count_selected = { fg = "#000000", bg = "#ffddbb" }
+
+border_symbol = "│"
+border_style  = { fg = "#f57256" }
+
+[indicator]
+parent  = { fg = "#f57256" }
+current = { fg = "#f57256" }
+preview = { fg = "#ffddbb" }
+
+[tabs]
+active   = { fg = "#000000", bg = "#f57256" }
+inactive = { fg = "#ffddbb", bg = "#262626" }
+
+[mode]
+normal_main = { fg = "#000000", bg = "#f57256", bold = true }
+normal_alt  = { fg = "#f57256", bg = "#262626" }
+
+select_main = { fg = "#000000", bg = "#ffddbb", bold = true }
+select_alt  = { fg = "#ffddbb", bg = "#262626" }
+
+unset_main = { fg = "#000000", bg = "#f57256", bold = true }
+unset_alt  = { fg = "#f57256", bg = "#262626" }
+
+[status]
+progress_label  = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#f57256", bg = "#262626" }
+progress_error  = { fg = "#f57256", bg = "#262626" }
+
+perm_type  = { fg = "#f57256" }
+perm_read  = { fg = "#ffddbb" }
+perm_write = { fg = "#f57256" }
+perm_exec  = { fg = "#ffddbb" }
+perm_sep   = { fg = "#6c6c6c" }
+
+[input]
+border   = { fg = "#f57256" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[pick]
+border   = { fg = "#f57256" }
+active   = { fg = "#ffddbb" }
+inactive = {}
+
+[tasks]
+border  = { fg = "#f57256" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#262626" }
+cand            = { fg = "#ffddbb" }
+rest            = { fg = "#6c6c6c" }
+desc            = { fg = "#f57256" }
+separator       = "  "
+separator_style = { fg = "#6c6c6c" }
+
+[help]
+border  = { fg = "#f57256" }
+chord   = { fg = "#ffddbb" }
+action  = {}
+hovered = { bg = "#f57256", bold = true }
